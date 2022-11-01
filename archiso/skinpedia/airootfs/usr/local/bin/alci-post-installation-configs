@@ -1,0 +1,65 @@
+#!/bin/bash
+# Maintainer: Mahor Foruzesh <mahorforuzesh at pm dot me>
+
+#===============================================================
+#   Error Handling
+#
+# set -u: Treat unset variables as an error when substituting.
+# set -o pipefail: Prevents errors in pipeline from being masked.
+# set -e: Immediatly exit if any command has a non-zero exit status.
+# set -E: Inherit the trap ERR function before exiting by set.
+#
+# set -e is not recommended and unpredictable.
+# see https://stackoverflow.com/questions/64786/error-handling-in-bash
+# and http://mywiki.wooledge.org/BashFAO/105
+
+set -uo pipefail
+error() {
+    local parent_lineno="$1"
+    local message="$2"
+    local code="${3:-1}"
+    if [ -z "${message}" ]; then
+        echo "$0: line ${parent_lineno}: exiting with status ${code}"
+    else
+        echo "$0: line ${parent_lineno}: ${message}: exiting with status ${code}"
+    fi
+    exit "${code}"
+}
+
+# Trap is much better alternative to set -e. use it in your code.
+# must be single quotes with ${LINENO} to prevent it from being expanded.
+#trap 'error ${LINENO} ""' ERR
+
+# setting IFS to tab and new line for better array and loop functionallity.
+#IFS=$'\n\t' # but prevents normal variable expansion
+
+#===============================================================
+trap 'error ${LINENO} ""' ERR
+
+user=
+# Autologin with lightdm"
+if [ ! $(getent group autologin) ]; then
+    groupadd autologin
+fi
+usermod -aG autologin "${user}"
+sed -i "/autologin-user=/s/=.*/=${user}/" /etc/lightdm/lightdm.conf
+sed -i "/autologin-user=/s/^#//" /etc/lightdm/lightdm.conf
+sed -i "/autologin-user-timeout=0/s/^#//" /etc/lightdm/lightdm.conf
+
+# The plymouth hook
+# grep checks if it's not already added to the hooks array
+# then insert it after base and udev
+grep -qxF "plymouth" /etc/mkinitcpio.conf ||\
+    sed -i "/^HOOKS/s/\budev\b/& plymouth/" /etc/mkinitcpio.conf
+# enable early KMS for plymouth booting logo
+grep -qxF "i915" /etc/mkinitcpio.conf ||\
+    sed -i "/^MODULES/s/\"\"/\"intel_agp i915\"/" /etc/mkinitcpio.conf
+
+# Remove vendor logo
+grep -qxF "fbcon=nodefer" /etc/default/grub ||\
+    sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT/s/\"$/ fbcon=nodefer\"/" \
+    /etc/default/grub
+grub-mkconfig -o "/boot/grub/grub.cfg"
+
+systemctl enable earlyoom lightdm-plymouth NetworkManager
+plymouth-set-default-theme -R simple-image

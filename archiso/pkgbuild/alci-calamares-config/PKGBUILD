@@ -1,0 +1,23 @@
+# Maintainer: Mahor Foruzesh <mahorforuzesh at pm dot me>
+
+pkgname=alci-calamares-config
+pkgver=21.07
+pkgrel=01
+pkgdesc="calamares for ALCI"
+arch=("any")
+url="https://git.bisotuntech.com/skinpedia"
+license=("custom")
+makedepends=("git")
+conflicts=("alci-calamares-config"
+           "alci-calamares-config-dev"
+           "alci-calamares-config-pure"
+           "alci-calamares-config-btrfs")
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+source=(${pkgname}::"git+${url}/${pkgname}")
+sha256sums=('SKIP')
+
+package() {
+    install -dm755 "${pkgdir}/etc"
+    cp -r "${srcdir}/${pkgname}/etc"/* "${pkgdir}/etc"
+}

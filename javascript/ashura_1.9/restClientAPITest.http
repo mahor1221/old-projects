@@ -1,0 +1,41 @@
+###
+GET http://localhost:8080/api/v1/categories/
+
+###
+DELETE http://localhost:8080/api/v1/admin/categories/60048ee7e10f1f64a9dc04bf
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbl9pZCI6IjYwMDQ4YWM1MzM1ZmNlZGFmYzNkNDUzZCIsImlhdCI6MTYxMDkxMDc5MiwiZXhwIjoxNjExMzA2NzkyfQ.wwa-TsHc_hXrGv3qQ1UGmMZtr8IKIARIn4e4I5lX9MA
+
+###
+GET http://localhost:8080/api/v1/posts/categories/5ffb45a0dd70ad4e593dbe98/tags
+
+###
+GET http://localhost:8080/api/v1/posts/tags/5ffa44379cd70a6ebad2bc6b
+
+###
+POST http://localhost:8080/api/v1/admin/categories
+content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbl9pZCI6IjYwMDQ4YWM1MzM1ZmNlZGFmYzNkNDUzZCIsImlhdCI6MTYxMDkxMDc5MiwiZXhwIjoxNjExMzA2NzkyfQ.wwa-TsHc_hXrGv3qQ1UGmMZtr8IKIARIn4e4I5lX9MA
+
+{
+    "title": "newCat",
+    "image": "https://www.google.com"
+}
+
+###
+POST http://localhost:8080/api/v1/admin/tags
+content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbl9pZCI6IjYwMDQ4YWM1MzM1ZmNlZGFmYzNkNDUzZCIsImlhdCI6MTYxMDkxMDc5MiwiZXhwIjoxNjExMzA2NzkyfQ.wwa-TsHc_hXrGv3qQ1UGmMZtr8IKIARIn4e4I5lX9MA
+
+{
+    "title": "MahorTag",
+    "isTrend": true
+}
+
+###
+POST http://localhost:8080/api/v1/admin/login
+content-type: application/json
+
+{
+    "email": "mahorforuzesh@protonmail.com",
+    "password": "vkJHaaWXZJVoXnKHlU7ve9stI"
+}

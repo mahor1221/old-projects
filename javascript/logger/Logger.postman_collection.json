@@ -1,0 +1,2859 @@
+{
+	"info": {
+		"_postman_id": "f55c5db2-5b14-4c89-bed5-ede67da91e8d",
+		"name": "Logger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "superAdmin",
+			"item": [
+				{
+					"name": "oAuth",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "superAdmin@superAdmin.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/oAuth/login",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"oAuth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "email",
+													"value": "superAdmin@superAdmin.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/oAuth/login",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"oAuth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:47:53 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379722"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "303"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12f-gWoR/B/2aigKb+D3dKlG5iw9eDA\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d576cd1568eee729d7c8ed\",\n        \"firstName\": \"super\",\n        \"lastName\": \"admin\",\n        \"email\": \"superAdmin@superAdmin.com\",\n        \"type\": \"superAdmin\",\n        \"token\": \"32e5e734458472f4fe750014797af7f0a6ccb57ad409f35ce719b9b868780092f1ead910\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "session",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/session?userId",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"session"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "index",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "",
+												"value": "",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/session?userId",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"session"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": null
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:49:07 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379782"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "572"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"23c-rFvtct/nAuAFfIafvL2UGyNqYBo\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d577591568eee729d7c8f0\",\n                \"user\": {\n                    \"_id\": \"61d576cd1568eee729d7c8ed\",\n                    \"mobile\": null,\n                    \"type\": \"superAdmin\",\n                    \"firstName\": \"super\",\n                    \"lastName\": \"admin\",\n                    \"email\": \"superAdmin@superAdmin.com\"\n                },\n                \"liveTime\": \"43200\",\n                \"deviceName\": \"PostmanRuntime/7.28.4\",\n                \"lastIp\": \"::1\",\n                \"updatedAt\": \"2022-01-05T10:49:07.990Z\",\n                \"createdAt\": \"2022-01-05T10:47:53.611Z\"\n            }\n        ],\n        \"total\": 1,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "single",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/session/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"session",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d5a153e848c2a179dbf0b2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "single",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/session/61d577591568eee729d7c8f0",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"session",
+												"61d577591568eee729d7c8f0"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "98"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:49:18 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379782"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "425"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a9-3BQStcLvon1XamMoLZFBAqiy/nM\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d577591568eee729d7c8f0\",\n        \"user\": {\n            \"_id\": \"61d576cd1568eee729d7c8ed\",\n            \"mobile\": null,\n            \"type\": \"superAdmin\",\n            \"firstName\": \"super\",\n            \"lastName\": \"admin\",\n            \"email\": \"superAdmin@superAdmin.com\"\n        },\n        \"liveTime\": \"43200\",\n        \"deviceName\": \"PostmanRuntime/7.28.4\",\n        \"lastIp\": \"::1\",\n        \"updatedAt\": \"2022-01-05T10:49:18.632Z\",\n        \"createdAt\": \"2022-01-05T10:47:53.611Z\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/session/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"session",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d577591568eee729d7c8f0"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "logout",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/session/61d577591568eee729d7c8f0",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"session",
+												"61d577591568eee729d7c8f0"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "97"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:49:24 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379782"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "110"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6e-vqsyjG/713/WAte+v0RHBwovvN8\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"message\": \"با موفقیت حذف شد\",\n        \"field\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							},
+							{
+								"key": "in",
+								"value": "header",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/profile",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"profile"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "index",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/profile",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"profile"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "97"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:50:00 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379842"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "367"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"16f-Q9WjturxSrE/DxuHFz5UUslank0\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d576cd1568eee729d7c8ed\",\n                \"firstName\": \"super\",\n                \"lastName\": \"admin\",\n                \"email\": \"superAdmin@superAdmin.com\",\n                \"type\": \"superAdmin\"\n            }\n        ],\n        \"total\": 1,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "signle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/profile/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"profile",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d576cd1568eee729d7c8ed"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "signle",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/profile/61d576cd1568eee729d7c8ed",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"profile",
+												"61d576cd1568eee729d7c8ed"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "96"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 10:50:11 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641379842"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "256"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"100-/yVxsaB4pI4LBBQHOMxt98897Yo\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d576cd1568eee729d7c8ed\",\n        \"firstName\": \"super\",\n        \"lastName\": \"admin\",\n        \"email\": \"superAdmin@superAdmin.com\",\n        \"type\": \"superAdmin\",\n        \"favoritesEpisode\": {\n            \"episodeId\": []\n        }\n    }\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "project",
+					"item": [
+						{
+							"name": "project",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/projects",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"projects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "project",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/projects",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"projects"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "98"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 12:08:55 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641384587"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "514"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"202-EaQuKQZCPOgfm0x3CZ7iigLCQ+k\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d581ae2156539210f8f670\",\n                \"name\": \"Refined Soft Chips\",\n                \"sections\": [\n                    {\n                        \"_id\": \"61d58a262d158c10666713e6\",\n                        \"name\": \"Sipes Inc\"\n                    },\n                    {\n                        \"_id\": \"61d58a272d158c10666713ec\",\n                        \"name\": \"Little, Yost and Hansen\"\n                    }\n                ]\n            },\n            {\n                \"_id\": \"61d5817fa742018b4f81e19e\",\n                \"name\": \"Licensed Soft Towels\",\n                \"sections\": []\n            }\n        ],\n        \"total\": 2,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "project/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/projects/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"projects",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d5a17de848c2a179dbf0d0"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "project/:id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/projects/:id",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"projects",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61d581ae2156539210f8f670"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 12:08:49 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641384587"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "288"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"120-iPS6vHmPGMGmS0X6G+qFW4v3FH4\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d581ae2156539210f8f670\",\n        \"name\": \"Refined Soft Chips\",\n        \"sections\": [\n            {\n                \"_id\": \"61d58a262d158c10666713e6\",\n                \"name\": \"Sipes Inc\"\n            },\n            {\n                \"_id\": \"61d58a272d158c10666713ec\",\n                \"name\": \"Little, Yost and Hansen\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "project",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "{{$randomProductName}}",
+											"type": "string"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/projects",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"projects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "project",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "{{$randomProductName}}",
+													"type": "string"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/projects",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"projects"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 11:31:58 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641382370"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "114"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"72-OeqgqjMTVMK94kmVLKrNuOF+gKc\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"message\": \"با موفقیت اضافه شد\",\n        \"field\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "section",
+					"item": [
+						{
+							"name": "section",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/sections",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"sections"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "section",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/sections",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"sections"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 14:14:22 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641392121"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "645"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"285-0R16N0e2aFKuuD8KXFt0bOsGdQQ\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d5a196e848c2a179dbf0ee\",\n                \"name\": \"Walter - Crona\",\n                \"project\": {\n                    \"_id\": \"61d5a17de848c2a179dbf0d0\",\n                    \"name\": \"Licensed Concrete Bike\"\n                }\n            },\n            {\n                \"_id\": \"61d5a194e848c2a179dbf0e8\",\n                \"name\": \"Bradtke LLC\",\n                \"project\": {\n                    \"_id\": \"61d5a17de848c2a179dbf0d0\",\n                    \"name\": \"Licensed Concrete Bike\"\n                }\n            },\n            {\n                \"_id\": \"61d5a190e848c2a179dbf0e2\",\n                \"name\": \"Heathcote - Kunze\",\n                \"project\": {\n                    \"_id\": \"61d5a17de848c2a179dbf0d0\",\n                    \"name\": \"Licensed Concrete Bike\"\n                }\n            }\n        ],\n        \"total\": 3,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "section/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/sections/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"sections",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d5a196e848c2a179dbf0ee"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "section/:id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/sections/:id",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"sections",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61d5a196e848c2a179dbf0ee"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "98"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 14:14:42 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641392121"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "226"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e2-nnmGdARGdHVwVFtJC/73aWfbJuI\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d5a196e848c2a179dbf0ee\",\n        \"name\": \"Walter - Crona\",\n        \"project\": {\n            \"_id\": \"61d5a17de848c2a179dbf0d0\",\n            \"name\": \"Licensed Concrete Bike\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "section",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "{{$randomCompanyName}}",
+											"type": "text"
+										},
+										{
+											"key": "projectId",
+											"value": "61d5a17de848c2a179dbf0d0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/sections",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"sections"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "section",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "{{$randomCompanyName}}",
+													"type": "text"
+												},
+												{
+													"key": "projectId",
+													"value": "61d581ae2156539210f8f670",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/sections",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"sections"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 12:15:04 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641384920"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "114"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"72-OeqgqjMTVMK94kmVLKrNuOF+gKc\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"message\": \"با موفقیت اضافه شد\",\n        \"field\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "log",
+					"item": [
+						{
+							"name": "log",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logs",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logs"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "log",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logs",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logs"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "96"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 13:25:06 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641389156"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2077"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"81d-ml2CpKGq9nofEueodHfXOL5xlFw\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d59c306b50690ef53ce7d2\",\n                \"ip\": \"235.140.200.182\",\n                \"data\": \"Use the neural SMTP interface, then you can copy t\",\n                \"logcode\": \"gn63wZHgqJyaiVfEUWkdgR\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            },\n            {\n                \"_id\": \"61d59c2f6b50690ef53ce7cc\",\n                \"ip\": \"80.142.183.86\",\n                \"data\": \"Use the redundant COM pixel, then you can copy the\",\n                \"logcode\": \"doYmvKfCNWjgcrDVsVYWCu\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            },\n            {\n                \"_id\": \"61d59a7328b6b7f0dc8fa8a3\",\n                \"ip\": \"23.244.150.3\",\n                \"data\": \"If we back up the bus, we can get to the SQL micro\",\n                \"logcode\": \"c8wYBvWBCq79gsyinKLxns\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            },\n            {\n                \"_id\": \"61d59a7328b6b7f0dc8fa89d\",\n                \"ip\": \"47.120.101.27\",\n                \"data\": \"You can't input the program without parsing the pr\",\n                \"logcode\": \"hdNVZLpgkVRsSR8BVuE9q1\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            },\n            {\n                \"_id\": \"61d59a7228b6b7f0dc8fa897\",\n                \"ip\": \"204.107.75.85\",\n                \"data\": \"We need to synthesize the redundant JSON card!\",\n                \"logcode\": \"byV9x9Xb1wHJ9Nb8damzRu\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            },\n            {\n                \"_id\": \"61d59a7228b6b7f0dc8fa891\",\n                \"ip\": \"184.119.49.147\",\n                \"data\": \"If we index the bus, we can get to the XSS driver \",\n                \"logcode\": \"4qF8CN9sKh7LM5xZ491GNm\",\n                \"section\": {\n                    \"_id\": \"61d58bc88235de25e3adfc54\",\n                    \"name\": \"Lubowitz, Jacobi and Tillman\"\n                },\n                \"project\": {\n                    \"_id\": \"61d581ae2156539210f8f670\",\n                    \"name\": \"Refined Soft Chips\"\n                }\n            }\n        ],\n        \"total\": 6,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "log/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logs/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d5a1b7e848c2a179dbf10c"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "log/:id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logs/:id",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logs",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61d5a1b7e848c2a179dbf10c"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 14:20:52 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641392512"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "583"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"247-cj+GTMqQB2+gnzd0uEa+FkKyrQI\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n        \"ip\": \"84.63.25.205\",\n        \"data\": \"You can't override the feed without connecting the\",\n        \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n        \"section\": {\n            \"_id\": \"61d5a196e848c2a179dbf0ee\",\n            \"name\": \"Walter - Crona\"\n        },\n        \"project\": {\n            \"_id\": \"61d5a17de848c2a179dbf0d0\",\n            \"name\": \"Licensed Concrete Bike\"\n        },\n        \"logDescriptionIds\": [\n            {\n                \"_id\": \"61d5a1c9e848c2a179dbf118\"\n            },\n            {\n                \"_id\": \"61d5a1cbe848c2a179dbf11e\"\n            },\n            {\n                \"_id\": \"61d5a1cce848c2a179dbf124\"\n            },\n            {\n                \"_id\": \"61d5a4da2d926c069566d4c4\"\n            },\n            {\n                \"_id\": \"61d5a4db2d926c069566d4ca\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "log",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "sectionId",
+											"value": "61d5a196e848c2a179dbf0ee",
+											"type": "string"
+										},
+										{
+											"key": "ip",
+											"value": "{{$randomIP}}",
+											"type": "string"
+										},
+										{
+											"key": "data",
+											"value": "{{$randomPhrase}}",
+											"type": "string"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logs",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logs"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "log",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "sectionId",
+													"value": "61d58bc88235de25e3adfc54",
+													"type": "string"
+												},
+												{
+													"key": "ip",
+													"value": "{{$randomIP}}",
+													"type": "string"
+												},
+												{
+													"key": "data",
+													"value": "{{$randomPhrase}}",
+													"type": "string"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logs",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logs"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "96"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 12:49:51 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641387020"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "312"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"138-H8tf5DYuytp18hLXJxEuaW7Q1EE\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": \"با موفقیت اضافه شد\",\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d593ef62d2d7947f2a48c6\",\n        \"ip\": \"144.32.109.163\",\n        \"data\": \"Use the bluetooth GB firewall, then you can synthe\",\n        \"logcode\": \"atBJNKFNB9gZmjhGZX57EN\",\n        \"sectionId\": \"61d58bc88235de25e3adfc54\"\n    }\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "logDescription",
+					"item": [
+						{
+							"name": "logDescription",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logDescriptions"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "logDescription",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logDescriptions"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "98"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 14:43:15 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641393852"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1792"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"700-nhCL3/J6fhyMcBWnXJSiyObQUBw\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"items\": [\n            {\n                \"_id\": \"61d5a4db2d926c069566d4ca\",\n                \"description\": \"If we index the panel, we can get to the FTP appli\",\n                \"status\": \"AWG\",\n                \"log\": {\n                    \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n                    \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n                    \"sectionId\": \"61d5a196e848c2a179dbf0ee\",\n                    \"ip\": \"84.63.25.205\",\n                    \"data\": \"You can't override the feed without connecting the\"\n                }\n            },\n            {\n                \"_id\": \"61d5a4da2d926c069566d4c4\",\n                \"description\": \"We need to calculate the mobile SMS firewall!\",\n                \"status\": \"IDR\",\n                \"log\": {\n                    \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n                    \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n                    \"sectionId\": \"61d5a196e848c2a179dbf0ee\",\n                    \"ip\": \"84.63.25.205\",\n                    \"data\": \"You can't override the feed without connecting the\"\n                }\n            },\n            {\n                \"_id\": \"61d5a1cce848c2a179dbf124\",\n                \"description\": \"Use the optical HTTP alarm, then you can hack the \",\n                \"status\": \"BDT\",\n                \"log\": {\n                    \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n                    \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n                    \"sectionId\": \"61d5a196e848c2a179dbf0ee\",\n                    \"ip\": \"84.63.25.205\",\n                    \"data\": \"You can't override the feed without connecting the\"\n                }\n            },\n            {\n                \"_id\": \"61d5a1cbe848c2a179dbf11e\",\n                \"description\": \"Use the solid state JSON pixel, then you can quant\",\n                \"status\": \"MZN\",\n                \"log\": {\n                    \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n                    \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n                    \"sectionId\": \"61d5a196e848c2a179dbf0ee\",\n                    \"ip\": \"84.63.25.205\",\n                    \"data\": \"You can't override the feed without connecting the\"\n                }\n            },\n            {\n                \"_id\": \"61d5a1c9e848c2a179dbf118\",\n                \"description\": \"Use the virtual SAS bandwidth, then you can transm\",\n                \"status\": \"DOP\",\n                \"log\": {\n                    \"_id\": \"61d5a1b7e848c2a179dbf10c\",\n                    \"logcode\": \"2v96dSarNUuphR3rFj8gn8\",\n                    \"sectionId\": \"61d5a196e848c2a179dbf0ee\",\n                    \"ip\": \"84.63.25.205\",\n                    \"data\": \"You can't override the feed without connecting the\"\n                }\n            }\n        ],\n        \"total\": 5,\n        \"limit\": 16,\n        \"totalPages\": 1,\n        \"page\": 1,\n        \"pagingCounter\": 1,\n        \"hasPrevPage\": false,\n        \"hasNextPage\": false,\n        \"prevPage\": null,\n        \"nextPage\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "logDescription/:id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logDescriptions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "61d5a1c9e848c2a179dbf118"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "logDescription/:id",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions/:id",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logDescriptions",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61d59d6e8e160e3e6b1b9f59"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 13:41:23 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641390143"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "441"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1b9-dLe2SUb/j83QT05JTKAIaIpEBeo\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"field\": null,\n        \"message\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"61d59d6e8e160e3e6b1b9f59\",\n        \"description\": \"The SAS bandwidth is down, quantify the mobile array so we can generate the COM panel!\",\n        \"status\": \"SOS\",\n        \"log\": {\n            \"_id\": \"61d59c306b50690ef53ce7d2\",\n            \"logcode\": \"gn63wZHgqJyaiVfEUWkdgR\",\n            \"sectionId\": \"61d58bc88235de25e3adfc54\",\n            \"ip\": \"235.140.200.182\",\n            \"data\": \"Use the neural SMTP interface, then you can copy t\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "logDescription",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "description",
+											"value": "{{$randomPhrase}}",
+											"type": "string"
+										},
+										{
+											"key": "status",
+											"value": "{{$randomCurrencyCode}}",
+											"type": "string"
+										},
+										{
+											"key": "logcode",
+											"value": "2v96dSarNUuphR3rFj8gn8",
+											"type": "string"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"superAdmin",
+										"logDescriptions"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "logDescription",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "description",
+													"value": "{{$randomPhrase}}",
+													"type": "string"
+												},
+												{
+													"key": "status",
+													"value": "{{$randomCurrencyCode}}",
+													"type": "string"
+												},
+												{
+													"key": "logcode",
+													"value": "gn63wZHgqJyaiVfEUWkdgR",
+													"type": "string"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{HOST}}/api/v1/superAdmin/logDescriptions",
+											"host": [
+												"{{HOST}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"superAdmin",
+												"logDescriptions"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "Expect-CT",
+											"value": "max-age=0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15552000; includeSubDomains"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "100"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "99"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 05 Jan 2022 13:30:22 GMT"
+										},
+										{
+											"key": "X-RateLimit-Reset",
+											"value": "1641389481"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "114"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"72-OeqgqjMTVMK94kmVLKrNuOF+gKc\""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": {\n        \"message\": \"با موفقیت اضافه شد\",\n        \"field\": null,\n        \"logcode\": \"0\"\n    },\n    \"status\": 200,\n    \"success\": true\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "apikey",
+						"apikey": [
+							{
+								"key": "value",
+								"value": "{{superAdminToken}}",
+								"type": "string"
+							},
+							{
+								"key": "key",
+								"value": "x-access-token",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "superAdminToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "HOST",
+			"value": "http://localhost:8081",
+			"type": "string"
+		}
+	]
+}

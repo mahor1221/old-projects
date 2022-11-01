@@ -1,0 +1,10 @@
+(node:32552) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:32552) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:25488) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:25488) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:7170) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:7170) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:20858) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:20858) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:12750) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:12750) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
